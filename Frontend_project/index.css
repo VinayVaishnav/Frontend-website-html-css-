@@ -1,0 +1,714 @@
+body {
+    background-color: lightgray;
+    margin: 0;
+}
+
+.main {
+    z-index: 999;
+    border: solid lightgray;
+    border-radius: 50px;
+    border-top: none;
+    border-width: 6px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0;
+    background-color: white; 
+}
+
+
+.header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    display: none;
+    flex-direction: column;
+    align-items: end;
+    padding: 5px;
+    margin-right: 8px;
+    width: 100% !important;
+    background-color: white
+}
+
+.header button{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.header img{
+    width: 30px;
+    height: 30px;
+}
+
+.footer{
+    z-index: 999;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100% !important;
+    padding: 10px;
+    
+}
+
+.footer button{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.footer img{
+    width: 20px;
+    height: 20px;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    padding: 10px;
+    justify-content: space-between;
+    margin-right: 8px;
+}
+
+.sidebar button{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar img{
+    width: 20px;
+    height: 20px;
+}
+
+.bio{
+    display: flex;
+    gap: 15px;
+}
+
+.bio img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 30px;
+    margin-right: 15px;
+}
+
+.account{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.accountdiv1{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.account p{
+    margin: 0px;
+}
+
+.Transaction{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Transaction p{
+    margin: 0px;
+}
+
+.Retirement{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 30px;
+}
+.Retirement h2{
+    margin-top: 0px;
+}
+.goal{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.goal p{
+    margin: 0px;
+}
+
+.goal div{
+    padding-bottom: 10px;
+    border-bottom: solid blue;
+}
+
+.strategy{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+    margin-right: 50px;
+    margin-left: 30px;
+}
+
+.strategy div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.strategy p{
+    margin: 0px;
+}
+
+.btn{
+    font-size: medium;
+    padding: 13px 20px;
+    color: #fff;
+    /* #4A4A4A */
+    text-align: center;
+    border-radius: 16px;
+    background: #3818fd;
+    cursor: pointer;
+}
+
+.texts{
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+a{
+    text-decoration: none;
+    color: #3818fd;
+}
+.range{
+    padding: 0px;
+}
+.progress-container3 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #9ad5fd 0% 59%,
+        transparent 65% 80%
+    );
+    margin-bottom: 5px;
+}
+.progress-container2 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #9ad5fd 0% 95%,
+        transparent 90% 100%
+    );
+    margin-bottom: 5px;
+}
+.progress-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #9ad5fd 0% 78%,
+        transparent 90% 100%
+    );
+    margin-bottom: 5px;
+}
+
+.percentage-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+.label-container {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+.gt{
+    font-size: 28px; font-weight: 900;margin-bottom: 20px;
+}
+
+.midsidebar{
+    margin-bottom: 90px;
+}
+.graphs{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.data{
+    display: flex;flex-direction: column; gap: 0px;
+}
+.datadiv{
+    display: flex;flex-direction: row;align-items: center; margin-top: 15px;
+}
+@media screen and (max-width: 1200px) {
+    .heading{
+        font-size: 20px;
+    }
+    .strategy p{
+        font-size: 14px;
+    }
+    .section1 p{
+        font-size: 14px;
+    }
+    .texts{
+        font-size: 12px;
+    }
+    .Retirement p{
+        font-size: 14px;
+    }
+    .progress-container{
+        width: 65px;
+        height: 65px;
+    }
+    .progress-container2{
+        width: 65px;
+        height: 65px;
+    }
+    .progress-container3{
+        width: 65px;
+        height: 65px;
+    }
+    .percentage-text{
+        font-size: 18px;
+    }
+    .gt{
+        font-size: 25px; font-weight: 900;margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .name{
+        font-size: 25px;
+    }
+    .data span{
+        font-size: 14px;
+    }
+    .bio{
+        flex-direction: column;
+        padding-left: 10px;
+    }
+    
+}
+
+
+@media screen and (max-width: 800px) {
+    .main{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .sidebar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 95%;
+        margin: 15px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+    .sidebar div{
+        flex-direction: row;
+        margin-bottom: 0px;
+    }
+    .section1{
+        flex-direction: row;
+        justify-content: space-between;
+        /* align-items: center; */
+        margin: 20px;
+        margin-top: 0px;
+    }
+    .bio img{
+        height: 120px;
+        width: 120px;
+    }
+    .bio{
+        margin-left: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .name{
+        font-size: 28px;
+    }
+    .account{
+        margin-left: 0px;
+        width: min-content;
+    }
+    .account div{
+        width: fit-content;
+    }
+    .Transaction{
+        margin-right: 20px;
+    }
+    .Retirement{
+        margin: 20px;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+    .retdiv1{
+        gap: 50px;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    .strategy{
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+        justify-content: space-between;
+    }
+    .section1 select{
+        height: 20%;
+    }
+    .graphs{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: row;
+    }
+    .graphs div{
+        text-align: center;
+        /* min-width: 250px; */
+        /* width: auto; */
+    }
+    .graphs div p{
+        margin: 10px;
+    }
+    .heading{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .data{
+        /* margin-top: 30px; */
+        gap: 5px;
+    }
+    .datadiv{
+        margin-top: 50px;
+    }
+    .btn{
+        font-size: 12px;
+        width: 80%;
+    }
+    .contri{
+        align-items: start;
+    }
+    .strategy h2{
+        text-align: center;
+    }
+    .retdiv1 h2{
+        margin-bottom: 0px;
+    }
+    .accountdiv1{
+        flex-direction: row;
+    }
+}
+.circles{
+    display: flex;
+    flex-direction: row;
+}
+.data p{
+    margin: 10px;
+}
+@media screen and (max-width: 655px) {
+    .section1{
+        margin-right: 5px;
+        margin-left: 5px;
+        padding: 0px;
+    }
+    .datadiv{
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .datadiv div{
+        flex-direction: row;
+    }
+    .datadiv select{
+        width: 50px;
+        font-size: 10px;
+    }
+    .data{
+        gap: 0px;
+    }
+    .data p{
+        margin: 5px;
+    }
+    .bio{
+        margin-left: 0px;
+        padding-left: 10px;
+    }
+    .bio img{
+        height: 100px;
+        width: 100px;
+    }
+    .name{
+        font-size: 24px;
+    }
+    .btn{
+        font-size: 13px;
+        width: 80%;
+    }
+
+}
+@media screen and (max-width: 550px) {
+    
+    .bio img{
+        height: 80px;
+        width: 80px;
+        
+    }
+    .bio{
+        padding: 0px;
+    }
+    .btn{
+        width: 80%;
+    }
+    .Transaction{
+        margin-right: 7px !important;
+    }
+    .data p{
+        display: none;
+    }
+    .datadiv div{
+        margin-left: 5px !important;
+    }
+    .graphs{
+        gap: 10px;
+    }
+    .section1{
+        gap: 15px;
+    }
+    .strategy{
+        gap: 5px;
+        margin: 0px;
+        margin-left: 10px;
+    }
+    
+    .stratdiv1 div div{
+        gap: 5px;
+    }
+    .stratdiv1 div div input{
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 515px){
+    .main{
+        align-items: center;
+        justify-content: center;
+    }
+    .graphs{
+        align-items: center;
+        flex-direction: column;
+    }
+    .retdiv1{
+        gap: 20px;
+    }
+    .balance{
+        font-size: 24px;
+    }
+    .strategy{
+        flex-direction: column;
+        width: 80%;
+    }
+    .strategy h2{
+        text-align: start;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .strategy div{
+        width: 100%;
+        border: none !important;
+    }
+    .stratdiv1 div{
+        width: 90%;
+    }
+    .stratdiv1 div div{
+        gap: 5px;
+    }
+    .stratdiv1 div div input{
+        width: 100%;
+    }
+    .contri{
+        margin-top: 25px;
+    }
+    .strategy p{
+        font-size: 16px;
+    }
+    .contri button{
+        width: 100%;
+    }
+    .section1{
+        flex-direction: column;
+        width: 90%;
+    }
+    .bio{
+        flex-direction: row;
+    }
+    .accsel{
+        margin-bottom: 25px;
+        padding-left: 20px;
+    }
+    .name{
+        font-size: 32px;
+    }
+    .bio img{
+        height: 140px;
+        width: 140px;
+        margin-bottom: 20px;
+    }
+    .balance{
+        font-size: 32px;
+    }
+    .dat{
+        margin-top: 10px;
+    }
+    .graphs div p{
+        font-size: 18px;        
+    }
+    .Transaction{
+        padding-left: 20px;
+    }
+
+    .sidebar img{
+        width: 17px;
+        height: 17px;
+    }
+    .progress-container{
+        height: 90px;
+        width: 90px;
+    }
+    .progress-container2{
+        height: 90px;
+        width: 90px;
+    }
+    .progress-container3{
+        height: 90px;
+        width: 90px;
+    }
+
+}
+
+@media screen and (max-width: 440px){
+    .retdiv1{
+        flex-direction: column;
+    }
+    .header{
+        display: flex;
+    }
+    .footer{
+        display: flex;
+    }
+    .main{
+        gap: 15px;
+    }
+    .sidebar{
+        display: none;
+    }
+    .datadiv{
+        margin-bottom: 20px;
+    }
+    .main{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        border: none;
+    }
+    body{
+        border: none;
+        background-color: white;
+    }
+}
+.accsel{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (max-width: 350px){
+    .name{
+        font-size: 28px;
+    }
+    .bio img{
+        height: 100px;
+        width: 100px;
+    }
+    .gt{
+        font-size: 20px;
+    }
+    .texts{
+        font-size: 12px !important;
+    }
+    .goal{
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 295px){
+    .name{
+        font-size: 26px;
+    }
+    .gt{
+        font-size: 17px;
+    }
+    .texts{
+        font-size: 10px !important;
+    }
+    .goal{
+        gap: 15px;
+    }
+    .progress-container{
+        height: 70px;
+        width: 70px;
+    }
+    .progress-container2{
+        height: 70px;
+        width: 70px;
+    }
+    .progress-container3{
+        height: 70px;
+        width: 70px;
+    }
+    
+}
+@media screen and (max-width: 295px){
+    .bio{
+        flex-direction: column;
+        height: min-content;
+        margin-bottom: 15px;
+    }
+    .bio img{
+        margin: 0px;
+    }
+}

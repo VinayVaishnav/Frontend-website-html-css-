@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Mockup</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        
+        google.charts.load('current', {'packages':['bar']});
+        google.charts.setOnLoadCallback(drawStuff);
+    
+        function drawStuff() {
+            var data = google.visualization.arrayToDataTable([
+                ['', 'Employer', 'Employee', 'Total Interest'],
+                ["20", 70, 15, 15],
+                ["", 100, 12, 15],
+                ["35", 110, 15, 25],
+                ["", 120, 20, 35],
+                ["25", 130,25, 45],
+                ["", 140, 30, 55],
+                ["40", 150, 35, 65],
+                ["", 160, 40, 75],
+                ["60", 170, 45, 85],
+                ["", 180, 50, 95],
+                ["65", 190, 55, 105],
+                ["", 200, 60, 115],
+                ["70", 210, 65, 125],
+            ]);
+    
+            var options = {
+                padding: 0,
+                width:550,
+                legend: { position: 'top', textStyle: { fontSize: 12},alignment:'start',margin:0},
+                bars: 'vertical',
+                isStacked: true,
+                axes: {
+                    x: { 0: { side: 'bottom'} },
+                    y: { 0: { side: 'left', label: 'Dollars'} }
+                },
+                bar: { groupWidth: "75%" }
+            };
+            var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+
+            
+            if (window.matchMedia("(max-width: 1201px)").matches) {
+                options.width = 'auto';
+                options.legend.position='none';
+                chart.draw(data, google.charts.Bar.convertOptions(options));
+            }
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+            window.addEventListener('resize', function() {
+                if (window.innerWidth <= 1200) {
+                    location.reload();
+                }
+            });
+            if (window.matchMedia("(max-width: 802px)").matches) {
+                options.width = 250;
+                options.legend.position='none';
+                chart.draw(data, google.charts.Bar.convertOptions(options));
+            }
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+            window.addEventListener('resize', function() {
+                if (window.innerWidth <= 1200) {
+                    location.reload();
+                }
+            });
+            if (window.matchMedia("(max-width: 659px)").matches) {
+                options.width = 200;
+                options.legend.position='none';
+                chart.draw(data, google.charts.Bar.convertOptions(options));
+            }
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+            window.addEventListener('resize', function() {
+                if (window.innerWidth <= 1200) {
+                    location.reload();
+                }
+            });
+            if (window.matchMedia("(max-width: 519px)").matches) {
+                options.width = 280;
+                options.legend.position='none';
+                chart.draw(data, google.charts.Bar.convertOptions(options));
+            }
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+            window.addEventListener('resize', function() {
+                if (window.innerWidth <= 1200) {
+                    location.reload();
+                }
+            });
+            if (window.matchMedia("(max-width: 325px)").matches) {
+                options.width = 250;
+                options.legend.position='none';
+                chart.draw(data, google.charts.Bar.convertOptions(options));
+            }
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+            window.addEventListener('resize', function() {
+                if (window.innerWidth <= 1200) {
+                    location.reload();
+                }
+            });
+        };
+    </script>
+
+    <style>
+        
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <button><img src="images\bell.jpg" alt=""></button>
+        </div>
+        <div class="sidebar">
+            <div>
+                <button><img src="images\butterfly.png" alt=""></button>
+                <button><img src="images\search.png" alt=""></button>
+            </div>
+            <div class="midsidebar">
+                <button><img src="images\home.png" alt=""></button>
+                <button><img src="images\list1.jpg" alt=""></button>
+                <button><img src="images\list2.png" alt=""></button>
+                <button><img src="images\person.png" alt=""></button>
+            </div>
+            <div>
+                <button><img src="images\bell.jpg" alt=""></button>
+                <button><img src="images\exit.png" alt=""></button>
+            </div>
+        </div>
+    
+        <div class="section1">
+    
+            <div class="bio">
+                <img src="images\mike.jpg" alt="">
+                <div>
+                    <h1 class="name" style="margin: 0px;">Hi Mike,</h1>
+                    <p style="margin: 0px;">Welcome back.</p>
+                </div>
+            </div>
+            
+            <div class="accsel">
+                <div class="account" style="padding-left: 9px;">
+                    <h3 class="heading" style="margin-bottom: 0;">Today</h3>
+                    <div>
+                        <h1 class="balance" style="margin: 0px;;">$19,000</h1>
+                        <span class="texts">Account Balance</span>
+                    </div>
+                    <div class="accountdiv1">
+                        <div>
+                            <p style="font-weight: 800;font-size: 20px;">$4000</p>
+                            <span class="texts">Year-to-Date-Contribution</span>
+                        </div>
+                        <div>
+                            <p style="font-weight: 800; font-size: 20px;">$1800</p>
+                            <span class="texts">Total Interest</span>
+                        </div>
+                    </div>
+                </div>
+                <select class="btn" name="" id="btn">
+                    <option value="" disabled selected hidden>I want to</option>
+                </select>
+            </div>
+            <div class="Transaction">
+                <h3 class="heading" style="margin-bottom: 15px;">Recent Transaction</h3>
+                <div>
+                    <span class="texts">2020-08-07</span>
+                    <p>Withdrawn to Bank-XXX11</p>
+                </div>
+                <p style="border: solid gainsboro; border-width: .005px;"></p>
+                <div>
+                    <span class="texts">2020-08-07</span>
+                    <p>Withdrawn to Bank-XXX11</p>
+                </div>
+                <p style="border: solid gainsboro; border-width: .005px;"></p>
+                <div>
+                    <span class="texts">2020-08-07</span>
+                    <p>Withdrawn to Bank-XXX11</p>
+                </div>
+                <p style="border: solid gainsboro; border-width: .005px;"></p>
+            </div>
+        </div>
+        <div class="Retirement">
+            <div class="retdiv1" >
+                <div>
+                    <p style="margin: 0px; font-size: 18px; color: blue;">Retirement Income</p>
+                    <h2 style="font-size: 27px;">Starting Year 2056</h2>
+                </div>
+                
+                <div class="goal" >
+                    <div>
+                        <span class="gt">$300,000</span>
+                        <p class="texts">My Goal</p>
+                    </div>
+                    <div>
+                        <span class="gt">$59,000</span>
+                        <p class="texts">Goal Achieved</p>
+                    </div>
+                    <div>
+                        <span class="gt">$300</span>
+                        <p class="texts">Est. Monthly Income</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="graphs">
+                <div>
+                    <p style="margin-top: 20px;font-weight: 550;">Contributions Overtime</p>
+                    <div class="top_x_div" id="top_x_div"></div>
+                </div>
+                
+                <div class="dat" >
+                    <div>
+                        <p style="margin: 0px; margin-top: 20px;font-weight: 550;">How do I compare to my peers?</p>
+                        <p style="margin: 0px;"  class="texts">These numbers represent current goal achievement</p>
+                    </div>
+                    <div class="datadiv" >
+                        <div class="data" >
+                            <div>
+                                <span>Age:</span>
+                                <select name="" id="">
+                                    <option value="" disabled selected hidden>Under 30</option>
+                                </select>
+                            </div>
+                            <p style="border: solid gainsboro; border-width: .005px;"></p>
+                            <div>
+                                <span>Salary:</span>
+                                <select name="" id="">
+                                    <option value="" disabled selected hidden>K20-K30</option>
+                                </select>
+                            </div>
+                            <p style="border: solid gainsboro; border-width: .005px;"></p>
+                            <div>
+                                <span>Gender:</span>
+                                <select name="" id="">
+                                    <option value="" disabled selected hidden>Male</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="circles">
+                            <div style="margin-left: 20px;" >
+                                <div class="progress-container">
+                                    <div class="percentage-text">78%</div>
+                                </div>
+                                
+                                <div class="label-container">
+                                    Average
+                                </div>
+                            </div>
+                            <div style="margin-left: 20px;" >
+                                <div class="progress-container2">
+                                    <div class="percentage-text">95%</div>
+                                </div>
+                                
+                                <div class="label-container">
+                                    Top
+                                </div>
+                            </div>
+                            <div style="margin-left: 20px;" >
+                                <div class="progress-container3">
+                                    <div class="percentage-text">59%</div>
+                                </div>
+                                
+                                <div class="label-container">
+                                    Me
+                                </div>
+                            </div>
+
+                        </div>
+                        </div>
+                    </div>
+            </div>
+            </div>
+            <div class="strategy">
+                <div class="stratdiv1">
+                    <h2 class="heading">Retirement strategy</h2>
+            
+                    <div style="gap: 11px;margin-top: 5px;">
+                        <p>Employee Contributions</p>
+                        <div style="flex-direction: row;">
+                            <input type="range" min="0" max="100" value="50" oninput="rangeValue.innerText = this.value+'%'">
+                            <p id="rangeValue">50%</p>
+                        </div>
+                        <p>Retirement Age</p>
+                        <div style="flex-direction: row;">
+                            <input type="range" min="0" max="100" value="50" oninput="rangeValue2.innerText = this.value">
+                            <p id="rangeValue2">50</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <p class="bor" style="border: solid gainsboro; border-width: .005px;"></p>
+                <div class="contri">
+                    <p>Employer Contribution 8.4%</p>
+                    <p style="margin-bottom: 5px;">Interest Rate 5%</p>
+                    <button class="btn">Update</button>
+                    <a style="text-align: center;margin-bottom: 30px;" href="">View Help Docs</a>
+                </div>
+        
+                <div style="gap: 10px; border-left: solid blue; padding-left: 5px;">
+                    <p> Are you considering a <br><b>Housing Advance?</b> <br> <p class="texts">Limited time reduced interest</p> </p>
+                    <a href="">Learn More </a>
+                </div>                
+            </div>
+            <div class="footer">
+                <button><img src="images\home.png" alt=""></button>
+                <button><img src="images\list1.jpg" alt=""></button>
+                <button><img src="images\list2.png" alt=""></button>
+                <button><img src="images\person.png" alt=""></button>
+                <button><img src="images\search.png" alt=""></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
